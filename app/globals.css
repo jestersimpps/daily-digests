@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+:root {
+  --background: #000000;
+  --foreground: #ffffff;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+/* Prose overrides for dark theme */
+.prose {
+  --tw-prose-body: #d4d4d4;
+  --tw-prose-headings: #ffffff;
+  --tw-prose-links: #22d3ee;
+  --tw-prose-bold: #ffffff;
+  --tw-prose-quotes: #a3a3a3;
+  --tw-prose-quote-borders: #22d3ee;
+  --tw-prose-code: #22d3ee;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #171717;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #404040;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #525252;
+}
+
+/* Category badges */
+.category-ai {
+  background: rgba(34, 211, 238, 0.2);
+  color: #22d3ee;
+}
+
+.category-crypto {
+  background: rgba(250, 204, 21, 0.2);
+  color: #facc15;
+}
+
+.category-world {
+  background: rgba(74, 222, 128, 0.2);
+  color: #4ade80;
+}
